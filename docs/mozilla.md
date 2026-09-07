@@ -10,7 +10,7 @@ Firefox Deb 包镜像
 
 ## 收录版本
 
-AMD64 架构下的最新稳定版、beta、nightly、开发者版本与语言包。
+AMD64 与 ARM64 架构下的最新稳定版、beta、nightly、开发者版本与语言包。
 
 ## 使用说明
 
@@ -40,7 +40,7 @@ Linux](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-fire
 4. 添加镜像仓库：
 
     ```shell
-    echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://mirrors.ustc.edu.cn/mozilla/apt mozilla main" | sudo tee -a /etc/apt/sources.list.d/mozilla.list > /dev/null
+    echo "deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://mirrors.ustc.edu.cn/mozilla/apt mozilla main" | sudo tee -a /etc/apt/sources.list.d/mozilla.list > /dev/null
     ```
 
 5. 设置优先级，避免 Ubuntu 下 snap 版本被优先安装：
